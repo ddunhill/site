@@ -1,0 +1,66 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+.logo {
+  text-align: center;
+  width: 350px;
+  height: 120px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes blink {
+  79% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  80% {
+    color: #333;
+    text-shadow: none;
+  }
+
+  80.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  81% {
+    color: #333;
+    text-shadow: none;
+  }
+
+  81.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+
+  82.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+body {
+  background: #000;
+}
+
+.logo {
+  font: 100 5em "Exo 2";
+  color: #fff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #b200ff, 0 0 0.5em #b200ff, 0 0 0.1em #b200ff;
+  b {
+    animation: blink linear infinite 10s;
+    -webkit-animation: blink linear infinite 10s;
+    font: inherit;
+  }
+}

@@ -12,7 +12,7 @@
 		<!--build:css css/index.min.css-->
 		
 		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		
 		<link rel="stylesheet" href="css/flipclock.css">
 		<link rel="stylesheet" href="css/index.css">
@@ -29,13 +29,17 @@
 	</head>
 	
 	<body>
-		
+
+		<div class="container">
+			<div class="header clearfix">
+				<h1>T<a href="menu.html">a</a>s<a href="images/words.svg">k</a>er<a href="logo.html">w</a>e<a href="banner.html">b</a></h1>
+			</div>
+		</div>
         <div class="jumbotron">
             <div class="container">
-                <h1>T<a href="menu.html">a</a>s<a href="images/words.svg">k</a>er<a href="logo.html">w</a>e<a href="banner.html">b</a></h1>
                 <p>Working in programming and web development for <div id="noclocks"></div></p>       
-          </div>
-
+			</div>
+			  
             <div class="container" id="clocks">
                 <div class="clock" style="display:none;">
                     <span class="flip-clock-divider years">
@@ -79,25 +83,71 @@
                     </ul>
                 </div>
             </div>
-            <div class="container">
-                <p>I have worked in web and coding since 1995. I get a buzz from thinking up simple elegant solutions and setting them free on the World.</p>
-            </div>
-            <div class="container">
-			  <h2>Bits & pieces</h2>
-			  <div class="list-group">
-				<a href="weather" class="list-group-item">Javascript example - My weather</a>
-				<a href="bloodbikes" class="list-group-item">Javascript example - Blood Bikes Weather - Bristol</a>
-				<a href="service/home/triathlons" class="list-group-item">.NET examples - Triathlon calculator</a>
-				<a href="service/home/beers" class="list-group-item">.NET examples - Beer list</a>
+
+			<div class="container">
+				<p>I have worked in the web and coding since 1995. I get a buzz from thinking up simple elegant solutions and setting them free on the World.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Example code, Bits &amp; pieces.</h2>
+			<div class="row">						
+				<div class="col-md-6">
+					<h3>Triathlon calculator</h3>
+					<p><small>.NET example - Using google graphs the page displays the results of races I have done
+						plus predictions of upcoming ones. The data is stored in a Google doc which is accessed via through OAuth and the Google API. 
+						The future race results are estimated based on the existing results and linear curve fitting. </small></p>
+					<p><a class="btn btn-default" href="service/home/triathlons" role="button">View Triathlon calculator page »</a></p>
+				</div>
+
+				<div class="col-md-6">
+					<h3>Isle of Dogs</h3>
+					<p><small>Javascript example - The page is based on data dynamically taken from Wikipedia and Google using Ajax and JsonP. The Antiquing effect is done using CSS, transparency and z-orders. </small></p>
+					<p><a class="btn btn-default" href="isleofdogs" role="button">View Isle of Dogs page »</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Blood Bikes Weather - Bristol</h3>
+					<p><small>Javascript example - Built for the Bristol branch of the Blood bikes organisation. 
+						This page takes weather data from the Met Office for 6 locations around Bristol. 
+						Different images and styling are displayed based on the data.</small></p>
+					<p><a class="btn btn-default" href="bloodbikes" role="button">View Blood bikes page »</a></p>
+				</div>
+					
+				<div class="col-md-6">
+					<h3>My weather</h3>
+					<p><small>Javascript example - Similar to the Blood bikes page but a different selection of locations. 
+						Images are generated SVG files. </small></p>
+					<p><a class="btn btn-default" href="weather" role="button">View My weather page »</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Beer list</h3>
+					<p><small>.NET example - The data is stored in a Google doc. It is accessed through OAuth and the Google API. </small></p>
+					<p><a class="btn btn-default" href="service/home/beers" role="button">View Beer list page »</a></p>
+				</div>
+				
+				<div class="col-md-6">
+					<h3>Github</h3>
+					<p><small>The code for the samples and the site. </small></p>
+					<p><a class="btn btn-default" target="_blank" href="https://github.com/ddunhill/GoogleWebService" role="button">View code »</a></p>
+				</div>
+					
+			</div>
+
+			<div class="list-group">
+				<h3>Other things</h3>	
 				<!--<a href="service" class="list-group-item">.Net examples - </a>
 				<a href="cms" class="list-group-item">.Net examples - Umbraco - holding page only</a>-->
 				<a href="banner.html" class="list-group-item">Banner</a>
 				<a href="menu.html" class="list-group-item">Menu</a>
 				<a href="logo.html" class="list-group-item">Logo</a>
 				<a href="words.html" class="list-group-item">Words</a>
-			  </div>
-            </div>
+			</div>
 		</div>
+	
 		
 		<div class="container">
 		  <!-- Example row of columns -->
@@ -126,8 +176,7 @@
 		  </footer>
 		</div> <!-- /container -->
 	
-	
-			<!-- jQuery -->
+		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		
 		<!--build:js js/index.min.js -->

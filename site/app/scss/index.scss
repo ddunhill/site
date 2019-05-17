@@ -25,5 +25,13 @@ a {
 }
 
 .jumbotron {
-  background-color: lightskyblue;		
+  background-color: rgba(135,206,250 ,0.5 );		
 }
+
+.header img { 
+  float: left;
+  height: 76px;
+  padding-right: 5px;
+}
+
+#name { float: right;}
